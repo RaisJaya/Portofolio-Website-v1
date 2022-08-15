@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #000000;
+  margin: 0%;
+  padding: 0%;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.navbar {
+  background-color: rgba(9, 10, 10, 0.699);
+  padding: 18px;
+}
+.navbar-brand {
+  font-family: "Lobster Two", cursive;
+  font-size: 45px;
+  color: #e60051;
+}
+a {
+  color: white;
+  font-size: 20px;
+}
+
+a:hover {
+  color: #e60051;
+}
+.section-home {
+  background-image: url("assets/Home2.jpg");
+  align-items: center;
+  background-repeat: no-repeat;
+  position: static;
+  width: auto;
+  height: 758px;
+  background-size: 100%;
+  min-height: 1000px;
+  overflow: visible;
+  margin: 0%;
+  padding: 0px;
+}
+.sticky-nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  z-index: 1;
+  background-color: rgba(12, 32, 59, 0.2);
+  padding: 18px;
+}
+.personal-info {
+  margin-top: 180px;
+}
+.icon {
+  padding: 6px;
+}
+.icon:hover {
+  color: #e60051;
+}
+.text-animate {
+  font-family: "Sacramento", cursive;
+  color: #e60051;
+  font-size: 30px;
+}
+.text-animate span {
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  animation: animate 20s linear infinite 0s;
+}
+.text-animate span:nth-child(2) {
+  animation-delay: 3s;
+}
+.text-animate span:nth-child(3) {
+  animation-delay: 6s;
+}
+.text-animate span:nth-child(4) {
+  animation-delay: 9s;
+}
+.text-animate span:nth-child(5) {
+  animation-delay: 12s;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+  }
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+  17% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+  }
+}
+
+.section-about {
+  background-color: #1c1c1c;
+  padding-bottom: 5rem;
+}
+
+h2,
+h6 {
+  color: #e60051;
+}
+
+.section-skils {
+  background-color: #273036;
+  padding-top: 8rem;
+}
+.Download {
+  color: #e60051;
+  font-family: "Courier New", Courier, monospace;
+  font-size: smaller;
+}
+/* .Download:hover {
+  padding: 8px;
+  border-radius: 10px;
+  color: #c8dfee;
+} */
+
+.Progress-skill {
+  text-align: center;
+  background-color: white;
+  padding: 5px;
+  width: 410px;
+  height: 80px;
+  border-radius: 8px;
+  box-shadow: -2px -3px 3px #000000;
+}
+.Progress-skill:hover {
+  padding: 8px;
+  border-radius: 10px;
+}
+/* @if $enable-transitions {
+  @keyframes progress-bar-animated {
+    0% {
+      background-position-x: translate;
+      width: 0%;
+    }
+    50% {
+      background-position-x: $progress-height;
+      width: 30%;
+    }
+    75% {
+      background-position-x: $progress-height;
+      width: 50%;
+    }
+    100% {
+      background-position-x: $progress-height;
+      width: 100%;
+    }
+  }
+} */
+
+.section-portofolio {
+  background-color: #1c1c1c;
+  padding-top: 8rem;
+}
+.card-body {
+  box-shadow: -2px -3px 3px #c8dfee;
+}
+.card-text {
+  text-align: center;
+  color: #000000;
+}
+.section-contact {
+  background-color: black;
+}
+
+footer {
+  padding-bottom: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
